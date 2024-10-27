@@ -62,10 +62,18 @@ h3 {
 
 /* Video Styling */
 
-.video-player {
+.video-player1{
     width: 100%;
     max-width: 100%;
     border: 2px solid #ff4d4d;
     border-radius: 8px;
     margin-top: 1em;
 }
+.video-player2{
+    width: 100%;
+    max-width: 100%;
+    border: 2px solid #ff4d4d;
+    border-radius: 8px;
+    margin-top: 1em;
+}
+
