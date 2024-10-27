@@ -27,7 +27,7 @@ body {
 /* Container Styling */
 
 .container {
-    margin-left: 200px;
+    margin-left: 0px;
     max-width: 600px;
     padding: 20px;
     border: 2px solid #ff4d4d;
