@@ -1,0 +1,78 @@
+/* General Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body Styling */
+
+body {
+    background-color: #0a0a23;
+    /* Dark blue background */
+    color: #ffffff;
+    /* White text color */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+
+/* Container Styling */
+
+.container {
+    max-width: 500px;
+    padding: 20px;
+    border: 2px solid #ff4d4d;
+    /* Red border */
+    border-radius: 10px;
+    background-color: #1a1a40;
+    /* Slightly lighter dark background */
+}
+
+
+/* Header Styling */
+
+h1 {
+    color: #ff4d4d;
+    /* Bright red text */
+    font-size: 2.5em;
+    margin-bottom: 0.3em;
+}
+
+h3 {
+    color: #ffcccc;
+    /* Light red */
+    font-size: 1.5em;
+    margin-bottom: 0.7em;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+}
+
+
+/* Link as Button Styling */
+
+.video-link {
+    color: #ffffff;
+    background-color: #ff4d4d;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.video-link:hover {
+    background-color: #ff6666;
+    /* Slightly lighter red */
+}
