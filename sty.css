@@ -6,74 +6,112 @@
     box-sizing: border-box;
 }
 
-
-/* Body Styling */
-
 body {
-
-    height: 1500px;
-    width: 700px;
-    background-color: #0a0a23;
+    font-family: Arial, sans-serif;
+    background-color: #1a1e3b;
     /* Dark blue background */
-    color: #ffffff;
-    /* White text color */
-    font-family: 'Arial', sans-serif;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    text-align: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 50px;
+    color: #ffffff;
+    /* Default text color for readability */
 }
 
 
 /* Container Styling */
 
 .container {
-    /* margin-left: 200px;
-    max-width: 600px;
-    padding: 20px; */
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #2b2e4a;
+    /* Slightly lighter dark blue */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     border: 2px solid #ff4d4d;
     /* Red border */
-    border-radius: 10px;
-    background-color: #1a1a40;
-    /* Slightly lighter dark background */
-    text-align: center;
-    justify-content: center;
 }
 
 
-/* Header Styling */
+/* Heading Styling */
 
-h1 {
+.container h1 {
+    font-size: 2.2rem;
     color: #ff4d4d;
-    /* Bright red text */
-    font-size: 2.5em;
-    margin-bottom: 0.3em;
+    /* Red text color for the main heading */
+    margin-bottom: 10px;
 }
 
-h3 {
-    color: #ffcccc;
-    /* Light red */
-    font-size: 1.5em;
-    margin-bottom: 0.7em;
+.container h3 {
+    font-size: 1.3rem;
+    color: #b0b3c5;
+    /* Light gray for a softer look */
+    margin-bottom: 20px;
 }
 
 
-/* Video Styling */
+/* Video Player Styling */
 
-.video-player1{
+.video-player1,
+.video-player2 {
     width: 100%;
-    max-width: 100%;
-    border: 2px solid #ff4d4d;
+    max-width: 360px;
+    height: auto;
     border-radius: 8px;
-    margin-top: 1em;
-}
-.video-player2{
-    width: 100%;
-    max-width: 100%;
+    margin: 10px;
     border: 2px solid #ff4d4d;
-    border-radius: 8px;
-    margin-top: 1em;
+    /* Red border around videos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    background-color: #1a1e3b;
+    /* Dark background for video */
 }
 
+
+/* Flex Layout for Videos */
+
+.videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/* Button and Video Control Customizations */
+
+video::-webkit-media-controls-panel {
+    background-color: #1a1e3b;
+}
+
+video::-webkit-media-controls-play-button,
+video::-webkit-media-controls-volume-slider {
+    color: #ff4d4d;
+}
+
+
+/* Responsive Design for Mobile */
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        max-width: 90%;
+    }
+    .container h1 {
+        font-size: 1.8rem;
+    }
+    .container h3 {
+        font-size: 1rem;
+    }
+    .video-player1,
+    .video-player2 {
+        max-width: 100%;
+        margin: 5px 0;
+    }
+    .videos {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
